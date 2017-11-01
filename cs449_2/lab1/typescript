@@ -1,0 +1,8 @@
+Script started on Mon 09 Jan 2017 08:18:43 PM EST
+[?1034h(1) thoth $ gcc lab1.c
+lab1.c: In function ‘main’:
+lab1.c:4: error: expected ‘;’ before ‘return’
+(2) thoth $ exit
+exit
+
+Script done on Mon 09 Jan 2017 08:19:02 PM EST
