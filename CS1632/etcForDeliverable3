@@ -1,0 +1,22 @@
+def get_block_num(line) # added this function used for testing -- Mohit
+  regex = "^\\d+\\|"\
+          "\\h+\\|"\
+          "([A-Za-z]{,6}>[A-Za-z]{,6}\\(\\d+\\):)*[A-Za-z]{,6}>[A-Za-z]{,6}\\(\\d*\\)\\|"\
+          "\\d+\\.\\d+\\|"\
+          "\\h*$"
+  if line.match regex
+    elements = line.split("|")
+    block = Block::new
+    return block.block_num = elements[0].to_i
+  end
+  nil
+end
+
+b = Block::new; # previous block
+b,err = b.parse_line("2|8c56|Gaozu>Pakal(16):Cyrus>Tang(3):SYSTEM>Peter(100)|1518893687.348124000|71c9");
+a = Block::new; # current block
+a,e = a.parse_line("3|71c9|Cyrus>Mary(1):SYSTEM>Xerxes(100)|1518893687.355456000|6e18");
+tmp = b.error_msg("3|71c9|Cyrus>Mary(1):SYSTEM>Xerxes(100)|1518893687.355456000|6e18", "time recorded in the current block",
+          "greater than the time recorded in the previous block",
+          "less than the time recorded in the previous block");
+assert_equal tmp, b.timestamp_error(a, b, "3|71c9|Cyrus>Mary(1):SYSTEM>Xerxes(100)|1518893687.355456000|6e18");
