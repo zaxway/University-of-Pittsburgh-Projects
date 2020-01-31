@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB65D7D321B1C5AF00405AC3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = BB65D7D221B1C5AF00405AC3 /* main.c */; };
+		BB65D7DB21B1C5C400405AC3 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65D7DA21B1C5C400405AC3 /* GLUT.framework */; };
+		BB65D7DD21B1C5CF00405AC3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB65D7DC21B1C5CF00405AC3 /* OpenGL.framework */; };
+		BB65D7E521B1C62B00405AC3 /* genMazeExample.c in Sources */ = {isa = PBXBuildFile; fileRef = BB65D7DF21B1C62B00405AC3 /* genMazeExample.c */; };
+		BB65D7E621B1C62B00405AC3 /* initShader.c in Sources */ = {isa = PBXBuildFile; fileRef = BB65D7E021B1C62B00405AC3 /* initShader.c */; };
+		BB65D7E821B1C62B00405AC3 /* mainMaze.c in Sources */ = {isa = PBXBuildFile; fileRef = BB65D7E321B1C62B00405AC3 /* mainMaze.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB65D7CD21B1C5AF00405AC3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BB65D7CF21B1C5AF00405AC3 /* Lab8FakeShadow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab8FakeShadow; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB65D7D221B1C5AF00405AC3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		BB65D7DA21B1C5C400405AC3 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		BB65D7DC21B1C5CF00405AC3 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		BB65D7DE21B1C62B00405AC3 /* genMaze.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genMaze.h; sourceTree = "<group>"; };
+		BB65D7DF21B1C62B00405AC3 /* genMazeExample.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = genMazeExample.c; sourceTree = "<group>"; };
+		BB65D7E021B1C62B00405AC3 /* initShader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = initShader.c; sourceTree = "<group>"; };
+		BB65D7E121B1C62B00405AC3 /* initShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = initShader.h; sourceTree = "<group>"; };
+		BB65D7E321B1C62B00405AC3 /* mainMaze.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mainMaze.c; sourceTree = "<group>"; };
+		BB65D7E421B1C62B00405AC3 /* vshader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vshader.glsl; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB65D7CC21B1C5AF00405AC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB65D7DD21B1C5CF00405AC3 /* OpenGL.framework in Frameworks */,
+				BB65D7DB21B1C5C400405AC3 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB65D7C621B1C5AF00405AC3 = {
+			isa = PBXGroup;
+			children = (
+				BB65D7D121B1C5AF00405AC3 /* Lab8FakeShadow */,
+				BB65D7D021B1C5AF00405AC3 /* Products */,
+				BB65D7D921B1C5C400405AC3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BB65D7D021B1C5AF00405AC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB65D7CF21B1C5AF00405AC3 /* Lab8FakeShadow */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB65D7D121B1C5AF00405AC3 /* Lab8FakeShadow */ = {
+			isa = PBXGroup;
+			children = (
+				BB65D7D221B1C5AF00405AC3 /* main.c */,
+				BB65D7DE21B1C62B00405AC3 /* genMaze.h */,
+				BB65D7DF21B1C62B00405AC3 /* genMazeExample.c */,
+				BB65D7E021B1C62B00405AC3 /* initShader.c */,
+				BB65D7E121B1C62B00405AC3 /* initShader.h */,
+				BB65D7E321B1C62B00405AC3 /* mainMaze.c */,
+				BB65D7E421B1C62B00405AC3 /* vshader.glsl */,
+			);
+			path = Lab8FakeShadow;
+			sourceTree = "<group>";
+		};
+		BB65D7D921B1C5C400405AC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB65D7DC21B1C5CF00405AC3 /* OpenGL.framework */,
+				BB65D7DA21B1C5C400405AC3 /* GLUT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB65D7CE21B1C5AF00405AC3 /* Lab8FakeShadow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB65D7D621B1C5AF00405AC3 /* Build configuration list for PBXNativeTarget "Lab8FakeShadow" */;
+			buildPhases = (
+				BB65D7CB21B1C5AF00405AC3 /* Sources */,
+				BB65D7CC21B1C5AF00405AC3 /* Frameworks */,
+				BB65D7CD21B1C5AF00405AC3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lab8FakeShadow;
+			productName = Lab8FakeShadow;
+			productReference = BB65D7CF21B1C5AF00405AC3 /* Lab8FakeShadow */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB65D7C721B1C5AF00405AC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Mohit Jain";
+				TargetAttributes = {
+					BB65D7CE21B1C5AF00405AC3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BB65D7CA21B1C5AF00405AC3 /* Build configuration list for PBXProject "Lab8FakeShadow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BB65D7C621B1C5AF00405AC3;
+			productRefGroup = BB65D7D021B1C5AF00405AC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB65D7CE21B1C5AF00405AC3 /* Lab8FakeShadow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB65D7CB21B1C5AF00405AC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB65D7E821B1C62B00405AC3 /* mainMaze.c in Sources */,
+				BB65D7E621B1C62B00405AC3 /* initShader.c in Sources */,
+				BB65D7E521B1C62B00405AC3 /* genMazeExample.c in Sources */,
+				BB65D7D321B1C5AF00405AC3 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BB65D7D421B1C5AF00405AC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BB65D7D521B1C5AF00405AC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BB65D7D721B1C5AF00405AC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BB65D7D821B1C5AF00405AC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB65D7CA21B1C5AF00405AC3 /* Build configuration list for PBXProject "Lab8FakeShadow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB65D7D421B1C5AF00405AC3 /* Debug */,
+				BB65D7D521B1C5AF00405AC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB65D7D621B1C5AF00405AC3 /* Build configuration list for PBXNativeTarget "Lab8FakeShadow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB65D7D721B1C5AF00405AC3 /* Debug */,
+				BB65D7D821B1C5AF00405AC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB65D7C721B1C5AF00405AC3 /* Project object */;
+}
