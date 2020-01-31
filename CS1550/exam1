@@ -1,0 +1,28 @@
+  Problem A
+
+    semaphore west = 0; // binary semaphore﻿﻿﻿﻿
+﻿﻿﻿﻿﻿﻿﻿﻿﻿.   semaphore east = 0;﻿﻿﻿﻿﻿﻿﻿﻿﻿ // binary﻿﻿ semaphore
+    semaphore numWest = x; // counting semaphore
+    semaphore numEast = y;﻿﻿﻿﻿﻿ // counting semaphore
+    if (numWest >= numEast) {
+      for (int i = 0; i < numWest; i++) {
+        if (west == 1) { // means east is entering
+          east = 0; // then east does not enter
+        }
+        else if (east == 1) { // means west is entering
+          west = 0; // then west does not enter
+        }
+      }
+    }
+    else if (numEast > numWest) {
+      for (int i = 0; i < numEast; i++) {
+        if (west == 1) { // means east is entering
+          east = 0; // then east does not enter
+        }
+        else if (east == 1) { // means west is entering
+          west = 0; // then west does not enter
+        }
+      }
+    }
+
+    Problem B
