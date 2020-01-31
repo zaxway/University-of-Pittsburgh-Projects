@@ -1,0 +1,29 @@
+{% block content %}
+
+<h3>Games to Delete</h3>
+{% if games %}
+<ul>
+    {% for game in games %}
+    <li><a>{{ game.game_string() }}</a></li>
+    {% endfor %}
+</ul>
+
+<form action="/deleteGame" method="POST">
+	<div class="deleteAGame">
+		<div class="delete-screen">
+			<div class="delete-form">
+				<div>
+					<input type="text" placeholder="Enter Game ID" name="game_id" id="game_id">
+					<label for="login-bday"></label>
+				</div>
+            <input type="submit" value="Delete" class="btn btn-primary btn-large btn-block" >
+			    <br>
+			</div>
+		</div>
+	</div>
+</form>
+{% else %}
+<p>Currently, there are no games available to play.</p>
+{% endif %}
+
+{% endblock %}

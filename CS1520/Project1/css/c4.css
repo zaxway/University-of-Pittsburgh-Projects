@@ -1,0 +1,64 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.title {
+  text-align: center;
+}
+
+.connect_four_dropper {
+  margin: auto;
+}
+
+.connect_four_board {
+  margin: auto;
+}
+
+.connect_four_dropper button {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+}
+
+.connect_four_board button {
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/white-circle.png);
+  background-color: yellow;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-color:blue;
+  border-width:3;
+}
+#tp1 {
+  position: absolute;
+  text-align: left;
+  color: black;
+}
+
+#tp2 {
+  text-align: right;
+  color: red;
+}
+#play_again {
+  width: 200px;
+  height: 30px;
+  visibility: hidden;
+}
+
+button.red {
+  /* background: #ad0505;
+  background: linear-gradient(to bottom, #ff1616 0%, #ad0505 100%); */
+  background-image: url(../images/red-circle.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+button.black {
+  /* background: #000;
+  background: linear-gradient(to bottom #333 0%, #000000 100%); */
+  background-image: url(../images/black-circle.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}

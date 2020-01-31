@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<form action="/createAppointment" method="POST">
+	<div class="signup">
+		<div class="signup-screen">
+			<div class="app-title">
+				<h1>Create a New Appointment</h1>
+			</div>
+
+			<div class="signup-form">
+        <div>
+          <input type="text" placeholder="Appointment ID" name="aptID" id="aptID">
+        </div>
+
+        <div>
+          <input type="text" placeholder="Date" name="date" id="date">
+        </div>
+
+        <div>
+          <input type="text" placeholder="Time" name="time" id="time">
+        </div>
+
+        <div>
+  				<input type="text" placeholder="Enter your Username" name="uName" id="uName">
+  				<label for="login-name"></label>
+        </div>
+
+        <div>
+  				<input type="text" placeholder="Enter a Stylist Name" name="stylist" id="stylist">
+  				<label for="login-name"></label>
+        </div>
+
+            <input type="submit" value="Submit">
+			    <br>
+			</div>
+		</div>
+	</div>
+</form>
+
+{% endblock %}

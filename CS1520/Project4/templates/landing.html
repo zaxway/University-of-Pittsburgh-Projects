@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Game Board {{ super() }}{% endblock %}
+
+
+{% block content %}
+
+<div>
+  <a href="logout"> Logout </a>
+</div>
+
+<div>
+  <a href="createGame"> Create a Game </a>
+</div>
+
+<div>
+  <a href="deleteGame"> Delete a Game </a>
+</div>
+
+<h1>Games</h1>
+{% if games %}
+<ul>
+    {% for game in games %}
+    <li><a href="{{ url_for('game', game_id = game.id)}}">{{ game.game_title() }}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>Currently, there are no games available to play.</p>
+{% endif %}
+
+<div>
+  <h1> Top Games </h1>
+  {% if games %}
+  <ul>
+    {% for game in games %}
+    {% if game.game_hasWinner() %}
+    <li><a href="{{ url_for('game', game_id = game.id)}}">{{ game.game_title() }}</a> </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p>Currently, there are no games available to play.</p>
+  {% endif %}
+</div>
+
+{% endblock %}

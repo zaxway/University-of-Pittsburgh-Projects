@@ -1,0 +1,131 @@
+<DOCTYPE!html>
+<html>
+<head>
+
+    <!-- <link rel="stylesheet" type="text/css" href="/css/vendor/bootstrap.min.css"> -->
+    <!-- <script type="text/javascript" src=""> -->
+
+    <link rel="stylesheet" type="text/css" href="css/c4.css">
+
+</head>
+
+<body>
+  <!-- ask the user for his/her name -->
+  <!-- <form>
+    Enter Name: <input type="text" name="fname"><br>
+    <input type="submit" value="Submit" onClick="firstPlayerName()" id = "submitButton">
+  </form> -->
+
+
+
+  <div class="title">
+    <h1> Connect 4 </h1>
+  </div>
+
+  <div>
+    <p id="turn_player"> The turn player is </p>
+    <p id="turn_player_birthday"> Birthday of Player: </p>
+  </div>
+
+  <div>
+    <button type="button" id="play_again"> Play Again </button>
+  </div>
+
+  <div class="tokens_player1">
+    <p id="tp1"> Remaining Tokens for Player 1 </p>
+  </div>
+
+  <div class="tokens_player2">
+    <p id="tp2"> Remaining Tokens for Player 2 </p>
+  </div>
+
+  <table class="connect_four_dropper">
+    <tbody>
+      <tr>
+        <td> <button type="button" id="1dropper" /> </td>
+        <td> <button type="button" id="2dropper" /> </td>
+        <td> <button type="button" id="3dropper" /> </td>
+        <td> <button type="button" id="4dropper" /> </td>
+        <td> <button type="button" id="5dropper" /> </td>
+        <td> <button type="button" id="6dropper" /> </td>
+        <td> <button type="button" id="7dropper" /> </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="connect_four_board">
+    <tbody>
+      <tr>
+        <td> <button type="button"> </button> </td>
+        <td> <button type="button"> </button> </td>
+        <td> <button type="button"></button> </td>
+        <td> <button type="button">  </button> </td>
+        <td> <button type="button">  </button> </td>
+        <td> <button type="button"> </button> </td>
+        <td> <button type="button">  </button> </td>
+      </tr>
+      <tr>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+      </tr>
+      <tr>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+      </tr>
+      <tr>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+      </tr>
+      <tr>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+      </tr>
+      <tr>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+        <td> <button type="button" /> </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="scoreboard">
+    <tbody>
+      <tr>
+        <td> <p> Player 1 Games Won </p> </td>
+        <td> <p> Player 2 Games Won </p> </td>
+      </tr>
+      <tr>
+        <td> <p id="p1GamesWon"> 0 games </p> </td>
+        <td> <p id="p2GamesWon"> 0 games </p> </td>
+      </tr>
+    </tbody>
+  </table>
+  <script src="js/names.js"> </script>
+  <script src="js/main.js"> </script>
+</body>
+
+</html>
